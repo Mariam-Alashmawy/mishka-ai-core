@@ -16,7 +16,6 @@ The AI Core of Mishka is split into two specialized sub-systems that handle cogn
 * **The Study Companion:** A Streamlit and FastAPI-powered intelligent hub that extracts text from documents, manages persistent session memory, and interfaces with Gemini 2.5 Flash via OpenRouter to generate interactive study assets.
 * **The Study Monitor:** A Streamlit client handling WebRTC video ingestion. It processes frames in a background thread to compute focus and postural ergonomics using mathematical landmark deviations.
 
-
 ---
 
 ## Core Features
@@ -36,6 +35,8 @@ The engine processes real-time camera frames through optimized MediaPipe Face an
 * **User Absent:** Detected immediately if zero valid facial or body vectors are registered by the camera framework.
 * **Zero-Freeze Concurrency:** Decouples these heavy matrix math operations from the main UI stream entirely by utilizing a bounded background FIFO `queue.Queue` pipeline.
 
+---
+
 ## Directory Structure & File Roles
 ```text
 Mishka Study Companion/
@@ -53,6 +54,5 @@ Mishka Study Monitor/
 ├── app.py              # WebRTC streamer rendering the Streamlit user interface
 ├── study_monitor.py    # Core computer vision processing and matrix analytics class
 └── requirements.txt    # Vision framework dependency tracker
-
-
+```
 ---
