@@ -1,0 +1,16 @@
+streamlit
+opencv-python
+opencv-contrib-python
+av
+openai
+python-dotenv
+PyPDF2
+python-docx
+python-pptx
+Pillow
+fastapi
+uvicorn
+python-multipart
+transformers
+torch
+sentencepiece
