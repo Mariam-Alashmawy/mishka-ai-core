@@ -1,15 +1,14 @@
-# 🐾 Mishka AI: Dual-Layered Study Companion & Behavioral Monitor
-
-> **An elegant AI-powered interactive study companion built to guide modern students, defeat distraction, and transform dense materials into gamified cosmic wisdom.**
+# Mishka: An AI-Driven Study Companion for Enhancing Student Focus and Learning Efficiency
+## Mishka AI Core: Dual-Layered Study Companion & Behavioral Monitor
 
 Mishka AI is an asynchronous educational application that blends a high-performance **Modular AI Synthesis Engine** (Gemini 2.5 Flash) with a **Real-Time Asynchronous Vision Monitor** (MediaPipe Pose & Face) to seamlessly track student engagement with zero UI latency.
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
-* **The Study Monitor (Frontend & Vision):** A Streamlit client handling WebRTC video ingestion. It processes frames in a background thread to compute focus and postural ergonomics using mathematical landmark deviations.
-* **The Study Companion (Backend & AI Core):** A FastAPI microservice that extracts text from documents, manages persistent session memory, and interfaces with Gemini 2.5 Flash via OpenRouter to generate interactive study assets.
+* **The Study Monitor:** A Streamlit client handling WebRTC video ingestion. It processes frames in a background thread to compute focus and postural ergonomics using mathematical landmark deviations.
+* **The Study Companion:** A FastAPI microservice that extracts text from documents, manages persistent session memory, and interfaces with Gemini 2.5 Flash via OpenRouter to generate interactive study assets.
 
 ---
 
